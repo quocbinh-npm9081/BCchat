@@ -58,7 +58,7 @@ route(app);
 
 const port = 4000 || process.env.PORT;
 let server = app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    //console.log(`Example app listening at http://localhost:${port}`);
 });
 const io = require('socket.io')(server);
 

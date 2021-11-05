@@ -1,0 +1,58 @@
+@import './variable';
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+// @import "~noty/src/noty.scss";
+// @import "~noty/src/themes/mint.scss";
+body {
+    font-family: 'Asap', sans-serif;
+    line-height: 1.4rem;
+}
+
+.logo {
+    font-family: 'Akronim', cursive!important;
+}
+
+.none {
+    display: none !important;
+}
+
+.translate-x-1000 {
+    transform: translateX(38rem);
+    -webkit-transform: translateX(38rem);
+    -moz-transform: translateX(38rem);
+    -ms-transform: translateX(38rem);
+    -o-transform: translateX(38rem);
+}
+
+//chat view
+.scrollbar-w-2::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+.scrollbar-track-blue-lighter::-webkit-scrollbar-track {
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+}
+
+.scrollbar-thumb-blue::-webkit-scrollbar-thumb {
+    --bg-opacity: 1;
+    background-color: #edf2f7;
+    background-color: rgba(237, 242, 247, var(--bg-opacity));
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+    border-radius: 0.25rem;
+}
+
+//edit avata
+#uploadBtn {
+    position: absolute;
+    transform: translate(7%, -50%);
+    left: 50%;
+    cursor: pointer;
+}

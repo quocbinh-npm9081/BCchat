@@ -1,0 +1,17 @@
+<!-- component -->
+<div class="profile-pic-div h-screen flex items-center justify-center">
+        <form action="/profile/avata/update?_method=PUT" method="POST" class="text-center" enctype="multipart/form-data">
+            <div class="group relative bg-white rounded-full shadow-lg text-center w-48 overflow-hidden">
+                <img id="photo" class="w-auto mx-auto rounded-full object-cover object-center" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" />
+                <input type="file" id="file" name="imageURL" class="hidden">
+                <label  for="file" id="chooseBtn" class="absolute bottom-0 leading-10 w-full h-auto text-center h-40 transform -translate-x-1/2 cursor-pointer bg-gray-300 text-white opacity-0 group-hover:opacity-100  group-focus:opacity-100" >
+                    Chọn ảnh
+                </label>
+            </div>
+            <button type="submit" class="px-4 py-2 bg-green-400	text-white rounded shadow-lg hover:bg-green-600	focus:bg-green-500 mt-10">Cập nhập</button>
+            <div class="mt-5">
+              <a href="/profile/edit" class="px-4 py-2 bg-red-400	text-white rounded shadow-lg hover:bg-red-600 focus:bg-red-500  ">Hủy</a>
+            </div>
+        </form>
+        
+  </div>
